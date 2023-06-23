@@ -17,3 +17,6 @@ As this is a bit complicated to run, I won't publish any builds that you can jus
 9. Install python libraries by going into the cloned repository and running pip: `pip install --target game/python-packages -r requirements.txt`
 10. Delete the `certifi` dependency (Ren'Py quirk, I think?): `rm -r game/python-packages/certifi*`
 11. Run the game through Ren'Py SDK.
+
+### Notes
+- `gpt-3.5-turbo` is rate-limited to 3 requests per minute if you have no card linked. Keep that in mind if you encounter huge latency.
